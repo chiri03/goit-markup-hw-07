@@ -182,12 +182,12 @@ ul {
   width: 1170px;
 }
 
-.skills-list {
+.skills-section-list {
   display: flex;
   gap: 30px;
   padding: 0;
 }
-.skills-icons {
+.skills-section-icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,7 +199,7 @@ ul {
   max-height: 120px;
 }
 
-.skills-title {
+.skills-section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -207,7 +207,7 @@ ul {
   margin-bottom: 10px;
 }
 
-.skills-subtitle {
+.skills-section-subtitle {
   color: var(--gray);
   font-weight: 400;
   font-size: 14px;
