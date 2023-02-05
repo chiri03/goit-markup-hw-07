@@ -35,7 +35,7 @@ ul {
 }
 
 .page-header {
-  background-color: var(--white);
+  background-color: #ffffff;
   border-bottom: 1px solid #e5e5e5;
   padding: 25px 0;
   display: flex;
@@ -44,13 +44,123 @@ ul {
 }
 
 .logo {
-  font-weight: var(--fontWeight);
+  font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--blue);
+  color: rgb(33, 150, 243);
 }
 .logo-web {
   color: rgb(0, 0, 0);
+}
+
+.navigation-bar {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav-link {
+  color: #212121;
+  text-decoration: none;
+  padding: 0 25px;
+  size: 14px;
+  line-height: 16px;
+  initial-letter-align: 2%;
+  font-weight: 500;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-nav-link:hover, .main-nav-link:focus, .main-nav-link:active {
+  color: rgb(33, 150, 243);
+}
+.main-nav-link:hover:after {
+  content: "";
+  border-bottom: 4px solid rgb(33, 150, 243);
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio:hover::after {
+  content: "";
+  border-bottom: 4px solid rgb(33, 150, 243);
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 10px;
+}
+.contact-list-item {
+  justify-content: center;
+  align-items: center;
+}
+.contact-list-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.contact-section-value {
+  color: #757575;
+  padding: 5px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-section-value:hover, .contact-section-value:focus, .contact-section-value:active {
+  color: rgb(33, 150, 243);
+}
+
+.big-section {
+  padding: 200px 0;
+  text-align: center;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom, rgba(13, 13, 13, 0.52), rgba(47, 48, 58, 0.4)), url(../images/bg-img.jpg);
+}
+.big-section h1 {
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  color: #ffffff;
+  text-align: center;
+}
+.big-section .button {
+  background-color: rgb(33, 150, 243);
+  color: #ffffff;
+  border: 1px solid rgb(33, 150, 243);
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 30px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.big-section .request-button:hover,
+.big-section .request-button:focus,
+.big-section .request-button:active {
+  background-color: #f5f4fa;
+  color: rgb(33, 150, 243);
 }/*# sourceMappingURL=main.css.map */

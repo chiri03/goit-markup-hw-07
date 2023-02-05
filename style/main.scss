@@ -30,8 +30,10 @@ ul {
   margin: 0 auto;
 }
 
+// page hader
+
 .page-header {
-  background-color: var(--white);
+  background-color: $white;
   border-bottom: 1px solid #e5e5e5;
   padding: 25px 0;
   display: flex;
@@ -40,13 +42,138 @@ ul {
 }
 
 .logo {
-  font-weight: var(--fontWeight);
+  font-weight: $fontWeight;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
   text-decoration: none;
-  color: var(--blue);
+  color: $blue;
   &-web {
     color: rgba(0, 0, 0, 1);
+  }
+}
+
+// nav bar
+
+.navigation-bar {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: space-around;
+}
+
+@mixin bottom-line-border {
+  border-bottom: 4px solid $blue;
+  border-radius: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.main-nav-link {
+  color: $black;
+  text-decoration: none;
+  padding: 0 25px;
+  size: 14px;
+  line-height: 16px;
+  initial-letter-align: 2%;
+  font-weight: 500;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+  }
+  &:hover:after {
+    content: "";
+    @include bottom-line-border;
+  }
+}
+
+.portfolio:hover::after {
+  content: "";
+  @include bottom-line-border;
+}
+
+// contact header section
+
+.contact-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 10px;
+
+  &-item {
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+}
+
+.contact-section-value {
+  color: $gray;
+  padding: 5px;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $blue;
+  }
+}
+
+.big-section {
+  padding: 200px 0;
+  text-align: center;
+  display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(13, 13, 13, 0.52),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+
+  h1 {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    color: $white;
+    text-align: center;
+  }
+  .button {
+    background-color: $blue;
+    color: $white;
+    border: 1px solid $blue;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin-top: 30px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .request-button:hover,
+  .request-button:focus,
+  .request-button:active {
+    background-color: $lightgrey;
+    color: $blue;
   }
 }
