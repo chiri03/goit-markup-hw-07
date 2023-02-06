@@ -38,7 +38,7 @@ ul {
 
 // page hader
 
-.page-header {
+.page_header {
   background-color: $white;
   border-bottom: 1px solid #e5e5e5;
   padding: 25px 0;
@@ -54,14 +54,14 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: $blue;
-  &-web {
+  &_web {
     color: rgba(0, 0, 0, 1);
   }
 }
 
 // nav bar
 
-.navigation-bar {
+.navigation_bar {
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
@@ -79,7 +79,7 @@ ul {
   left: 0;
   transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav-link {
+.main_nav_link {
   color: $black;
   text-decoration: none;
   padding: 0 25px;
@@ -109,7 +109,7 @@ ul {
 
 // contact header section
 
-.contact-list {
+.contact_list {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -117,19 +117,19 @@ ul {
   display: flex;
   gap: 10px;
 
-  &-item {
+  &_item {
     justify-content: center;
     align-items: center;
   }
 
-  &-icon {
+  &_icon {
     width: 16px;
     height: 16px;
     fill: currentColor;
   }
 }
 
-.contact-section-value {
+.contact_section_value {
   color: $gray;
   padding: 5px;
   text-decoration: none;
@@ -142,7 +142,7 @@ ul {
   }
 }
 
-.big-section {
+.big_section {
   padding: 200px 0;
   text-align: center;
   display: block;
@@ -176,9 +176,9 @@ ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .request-button:hover,
-  .request-button:focus,
-  .request-button:active {
+  .request_button:hover,
+  .request_button:focus,
+  .request_button:active {
     background-color: $lightgray;
     color: $blue;
   }
@@ -189,18 +189,18 @@ ul {
   width: 1170px;
 }
 
-.skills-section {
+.skills_section {
   .container {
     @include skill-container;
   }
 
-  .container &-list {
+  .container &_list {
     display: flex;
     gap: 30px;
     padding: 0;
   }
 
-  &-icons {
+  &_icons {
     @include display-on-page;
     padding: 25px 100px;
     background-color: #f5f4fa;
@@ -210,14 +210,14 @@ ul {
     max-height: 120px;
   }
 
-  &-title {
+  &_title {
     font-weight: $fontWeight;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
-  &-subtitle {
+  &_subtitle {
     color: $gray;
     font-weight: 400;
     font-size: 14px;
@@ -238,7 +238,7 @@ ul {
   margin-bottom: 90px;
 }
 
-.work-section-items {
+.work_section_items {
   display: flex;
   justify-content: space-around;
   padding-left: 0 215px;
@@ -247,7 +247,7 @@ ul {
 .box {
   position: relative;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &-bottom {
+  &_bottom {
     position: absolute;
     width: 370px;
     height: 70px;
@@ -269,7 +269,7 @@ ul {
 
 //team section
 
-.team-section {
+.team_section {
   background: $lightgray;
   display: flex;
   justify-content: center;
@@ -281,7 +281,7 @@ ul {
   }
 }
 
-.our-team {
+.our_team {
   font-weight: $fontWeight;
   font-size: 36px;
   line-height: 42px;
@@ -290,7 +290,7 @@ ul {
   color: $black;
   margin-bottom: 50px;
 
-  &-section {
+  &_section {
     display: flex;
     justify-content: space-around;
   }
@@ -307,7 +307,7 @@ ul {
   width: 260px;
   height: 260px;
 
-  &-container-name {
+  &_container_name {
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -315,7 +315,7 @@ ul {
     color: #212121;
     padding: 3px;
 
-    &-post {
+    &_post {
       font-size: 16px;
       line-height: 19px;
       text-align: center;
@@ -326,7 +326,7 @@ ul {
   }
 }
 
-.team-link {
+.team_link {
   color: $gray;
   left: 25px;
   bottom: 10px;
@@ -335,18 +335,18 @@ ul {
   color: $gray;
 }
 
-.photo-container-post {
+.photo_container_post {
   @include color;
   padding: 5px;
 }
 
-.social-icons-list {
+.social_icons_list {
   display: flex;
   gap: 10px;
   padding: 2px;
 }
 
-.social-link {
+.social_link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 45px;
@@ -361,7 +361,7 @@ ul {
     background-color: $blue;
   }
 
-  .social-icons {
+  .social_icons {
     width: 20px;
     height: 20px;
     fill: currentColor;
@@ -373,7 +373,7 @@ ul {
   }
 }
 
-.customers-section {
+.customer_section {
   display: flex;
   justify-content: center;
 }
@@ -382,12 +382,12 @@ ul {
   width: 1170px;
   height: 184px;
 
-  &-logo {
+  &_logo {
     display: flex;
     gap: 30px;
     color: #afb1b8;
 
-    &-icon {
+    &_icon {
       width: 100px;
       height: 47px;
       fill: currentColor;
@@ -395,7 +395,7 @@ ul {
   }
 }
 
-.customer-logo-item {
+.customers_logo_item {
   @include display-on-page;
   background-color: $white;
   border: 1px solid #afb1b8;
@@ -413,7 +413,7 @@ ul {
   }
 }
 
-.customer-section {
+.customers_section {
   font-weight: $fontWeight;
   font-size: 36px;
   line-height: 42px;
@@ -430,28 +430,28 @@ ul {
   padding-top: 60px;
   padding-bottom: 30px;
 
-  .footer-direction {
+  .footer_direction {
     display: flex;
     align-items: center;
     margin-left: 215px;
   }
 }
 
-.footer-social-icons {
+.footer_social_icons {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
 
-  .social-icons-list {
+  .social_icons_list {
     margin-left: -10px;
     fill: $white;
   }
-  .social-icons {
+  .social_icons {
     fill: $white;
   }
 }
 
-.find-us-p {
+.find_us_p {
   font-style: normal;
   font-weight: $fontWeight;
   font-size: 14px;
@@ -462,7 +462,7 @@ ul {
   padding-bottom: 25px;
 }
 
-.footer-logo {
+.footer_logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: $fontWeight;
@@ -472,12 +472,12 @@ ul {
   color: $blue;
   margin-bottom: 25px;
 
-  &-web {
+  &_web {
     color: $white;
   }
 }
 
-.nv-items-footer {
+.nv_items_footer {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -497,11 +497,11 @@ ul {
   display: inline;
 }
 
-.foot-logo-contacts {
+.foot_logo_contacts {
   margin-left: 130px;
 }
 
-.footer-logo-icons {
+.footer_logo_icons {
   display: flex;
   justify-content: center;
 }
@@ -528,15 +528,15 @@ ul {
     background-color: #188ce8;
   }
 
-  .social-icons {
+  .social_icons {
     width: 20px;
     height: 20px;
   }
 }
 
-.subscribe-container {
+.subscribe_container {
   margin-left: 92px;
-  .subscribe-title {
+  .subscribe_title {
     font-weight: $fontWeight;
     font-size: 14px;
     line-height: 1.14;
@@ -547,7 +547,7 @@ ul {
   }
 }
 
-.subscribe-form {
+.subscribe_form {
   display: flex;
   gap: 12px;
 
@@ -617,12 +617,12 @@ ul {
   }
 }
 
-.inner-form {
+.inner_form {
   padding: 40px;
   display: flex;
   flex-direction: column;
 
-  &-title {
+  &_title {
     font-weight: $fontWeight;
     font-size: 20px;
     line-height: 1.15;
@@ -633,7 +633,7 @@ ul {
   }
 }
 
-.info-box {
+.info_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -660,7 +660,7 @@ ul {
     background-color: $blue;
   }
 
-  &-icon {
+  &_icon {
     position: absolute;
     left: 15px;
     top: 50%;
@@ -697,12 +697,12 @@ textarea {
   margin-top: 4px;
   cursor: pointer;
 }
-.info-box input:focus,
+.info_box input:focus,
 textarea:focus {
   outline: 1px solid blue;
 }
 
-.info-box textarea {
+.info_box textarea {
   padding: 12px 16px;
   height: 120px;
   resize: none;
@@ -714,7 +714,7 @@ textarea:focus {
   }
 }
 
-.row:focus-within .info-box-icon {
+.row:focus-within .info_box_icon {
   fill: $blue;
 }
 
@@ -732,7 +732,7 @@ textarea:focus {
   -ms-user-select: none;
   user-select: none;
 
-  &-title {
+  &_title {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -812,7 +812,7 @@ textarea:focus {
     cursor: pointer;
   }
 
-  &-name {
+  &_name {
     font-weight: $fontWeight;
     font-size: 16px;
     line-height: 34px;
@@ -826,9 +826,9 @@ textarea:focus {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &-name:hover,
-  &-name:focus,
-  &-name:active {
+  &_name:hover,
+  &_name:focus,
+  &_name:active {
     background-color: $blue;
     color: $white;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -838,17 +838,17 @@ textarea:focus {
 
 // portfolio section with cards
 
-.portfolo-container {
+.portfolo_container {
   width: 1170px;
   margin: 0 auto;
 }
 
-.container-img {
+.container_img {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-.container-img-file {
+.container_img_file {
   background: $white;
   border: 1px solid rgba(238, 238, 238, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -892,7 +892,7 @@ textarea:focus {
   transform: translateY(0);
 }
 
-.container-img-file-head {
+.container_img_file_head {
   font-weight: $fontWeight;
   font-size: 18px;
   line-height: 36px;
@@ -901,7 +901,7 @@ textarea:focus {
   color: $black;
 }
 
-.container-img-file-paragraf {
+.container_img_file_paragraf {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
