@@ -242,7 +242,6 @@ ul {
   background: #f5f4fa;
   display: flex;
   justify-content: center;
-  max-width: 1600px;
 }
 .team-section .container {
   padding: 94px 0;
@@ -330,6 +329,11 @@ ul {
 }
 .social-link .social-icons:hover, .social-link .social-icons:focus, .social-link .social-icons:active {
   fill: currentColor;
+}
+
+.customers-section {
+  display: flex;
+  justify-content: center;
 }
 
 .customers {
@@ -598,72 +602,6 @@ ul {
 .info-box .button:focus, .info-box.button:active, .info-box .button:hover {
   background-color: rgb(33, 150, 243);
 }
-.info-box .row {
-  color: #757575;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  position: relative;
-}
-.info-box .row input {
-  padding: 14px 43px;
-  max-height: 40px;
-}
-
-.row input,
-textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  box-shadow: none;
-  color: var(--gray);
-  width: 100%;
-  margin-bottom: 10px;
-  margin-top: 4px;
-  cursor: pointer;
-}
-
-.info-box input:focus,
-textarea:focus {
-  outline: 1px solid var(--blue);
-}
-
-.info-box textarea:focus::-moz-placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.info-box textarea:focus:-ms-input-placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.info-box textarea:focus::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-}
-
-.info-box textarea {
-  padding: 12px 16px;
-  height: 120px;
-  resize: none;
-  margin-bottom: 20px;
-}
-
-.row input {
-  padding: 14px 43px;
-  max-height: 40px;
-}
-
-.row {
-  color: var(--gray);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  position: relative;
-}
-
 .info-box-icon {
   position: absolute;
   left: 15px;
@@ -672,13 +610,61 @@ textarea:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.row {
+  color: #757575;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  position: relative;
+}
+.row input {
+  padding: 14px 43px;
+  max-height: 40px;
+}
 .row:focus-within {
-  border-color: var(--blue);
-  fill: var(--blue);
+  border-color: rgb(33, 150, 243);
+  fill: rgb(33, 150, 243);
+}
+
+.row input,
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  box-shadow: none;
+  color: gray;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.info-box input:focus,
+textarea:focus {
+  outline: 1px solid blue;
+}
+
+.info-box textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+}
+.info-box textarea textarea:focus::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.info-box textarea textarea:focus:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+}
+.info-box textarea textarea:focus::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
 }
 
 .row:focus-within .info-box-icon {
-  fill: var(--blue);
+  fill: rgb(33, 150, 243);
 }
 
 /* check-box input */
@@ -694,6 +680,14 @@ textarea:focus {
   -ms-user-select: none;
   user-select: none;
 }
+.checkbox-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #757575;
+}
 
 /* Hide the browser's default checkbox */
 .checkbox input {
@@ -703,6 +697,14 @@ textarea:focus {
   height: 0;
   width: 0;
 }
+.checkbox input:checked ~ .checkmark {
+  background-color: rgb(33, 150, 243);
+  border: none;
+  border-radius: 2px;
+}
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
 
 /* Create a custom checkbox */
 .checkmark {
@@ -711,25 +713,13 @@ textarea:focus {
   left: 14px;
   height: 15px;
   width: 16px;
-  border: 1px solid var(--black);
-  background-color: var(--white);
+  border: 1px solid #212121;
+  background-color: #ffffff;
 }
-
-.checkbox input:checked ~ .checkmark {
-  background-color: #2196f3;
-  border: none;
-  border-radius: 2px;
-}
-
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
-
-/* Show the checkmark when checked */
-.checkbox input:checked ~ .checkmark:after {
-  display: block;
 }
 
 /* Style the checkmark/indicator */
@@ -738,20 +728,11 @@ textarea:focus {
   bottom: 1.5px;
   width: 8px;
   height: 15px;
-  border: solid white;
+  border: solid #ffffff;
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
 
-.checkbox-title {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: var(--gray);
-}
-
 .term {
-  color: var(--blue);
+  color: rgb(33, 150, 243);
 }/*# sourceMappingURL=main.css.map */
