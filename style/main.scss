@@ -30,6 +30,12 @@ ul {
   margin: 0 auto;
 }
 
+@mixin display-on-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 // page hader
 
 .page-header {
@@ -195,9 +201,7 @@ ul {
   }
 
   &-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-on-page;
     padding: 25px 100px;
     background-color: #f5f4fa;
     border-radius: 4px;
@@ -347,9 +351,7 @@ ul {
   border-radius: 50%;
   width: 45px;
   height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-on-page;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
@@ -394,14 +396,12 @@ ul {
 }
 
 .customer-logo-item {
+  @include display-on-page;
   background-color: $white;
   border: 1px solid #afb1b8;
   border-radius: 3px;
   width: 170px;
   height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -507,6 +507,7 @@ ul {
 }
 
 .subscribe {
+  @include display-on-page;
   color: $white;
   background-color: $footerBg;
   font-family: inherit;
@@ -518,10 +519,7 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid $borderColor;
-  display: flex;
   gap: 25px;
-  justify-content: center;
-  align-items: center;
   flex: 1 0 40%;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -570,13 +568,11 @@ ul {
 
 //modal section
 .modal {
+  @include display-on-page;
   background-color: rgba(0, 0, 0, 0.2);
   position: fixed;
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 5;
@@ -596,6 +592,7 @@ ul {
 }
 
 .close-modal {
+  @include display-on-page;
   background-color: $white;
   height: 30px;
   width: 30px;
@@ -605,9 +602,6 @@ ul {
   position: relative;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   margin: 0;
 
@@ -629,7 +623,7 @@ ul {
   flex-direction: column;
 
   &-title {
-    font-weight: 700;
+    font-weight: $fontWeight;
     font-size: 20px;
     line-height: 1.15;
     text-align: center;
