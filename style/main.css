@@ -385,14 +385,16 @@ ul {
 }
 .subsol .footer_direction {
   display: flex;
-  align-items: center;
-  margin-left: 215px;
+  align-items: self-start;
+}
+.subsol .footer_address {
+  margin-left: 100px;
 }
 
 .footer_social_icons {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .footer_social_icons .social_icons_list {
   margin-left: -10px;
@@ -482,7 +484,7 @@ ul {
 }
 
 .subscribe_container {
-  margin-left: 92px;
+  margin-left: 70px;
 }
 .subscribe_container .subscribe_title {
   font-weight: 700;
@@ -490,7 +492,7 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding: 15px 0 20px 0;
+  padding-bottom: 20px;
   text-transform: uppercase;
 }
 

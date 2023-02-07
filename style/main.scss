@@ -432,15 +432,18 @@ ul {
 
   .footer_direction {
     display: flex;
-    align-items: center;
-    margin-left: 215px;
+    align-items: self-start;
+  }
+
+  .footer_address {
+    margin-left: 100px;
   }
 }
 
 .footer_social_icons {
   display: flex;
   flex-direction: column;
-  margin-left: 10%;
+  margin-left: 5%;
 
   .social_icons_list {
     margin-left: -10px;
@@ -535,14 +538,14 @@ ul {
 }
 
 .subscribe_container {
-  margin-left: 92px;
+  margin-left: 70px;
   .subscribe_title {
     font-weight: $fontWeight;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: $white;
-    padding: 15px 0 20px 0;
+    padding-bottom: 20px;
     text-transform: uppercase;
   }
 }
